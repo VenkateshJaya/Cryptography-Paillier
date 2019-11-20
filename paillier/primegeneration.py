@@ -49,8 +49,7 @@ def is_probably_prime(possible, k=None):
 
 def generate_prime(bits, k=None):
     """Will generate an integer of b bits that is probably prime
-       (after k trials). Reasonably fast on current hardware for
-       values of up to around 512 bits."""
+       (after k trials)."""
     assert bits >= 8
 
     if k is None:

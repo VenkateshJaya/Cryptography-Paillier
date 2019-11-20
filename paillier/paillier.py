@@ -4,8 +4,7 @@ from .primegeneration import *
 def invmod(a, p, maxiter=1000000):
     """The multiplicitive inverse of a in the integers modulo p:
          a * b == 1 mod p
-       Returns b.
-       (http://code.activestate.com/recipes/576737-inverse-modulo-p/)"""
+       Returns b."""
     if a == 0:
         raise ValueError('0 has no inverse mod %d' % p)
     r = a
@@ -22,8 +21,7 @@ def invmod(a, p, maxiter=1000000):
 def modpow(base, exponent, modulus):
     """Modular exponent:
          c = b ^ e mod m
-       Returns c.
-       (http://www.programmish.com/?p=34)"""
+       Returns c."""
     result = 1
     while exponent > 0:
         if exponent & 1 == 1:

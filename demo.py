@@ -2,9 +2,9 @@
 from paillier.paillier import *
 
 print ("Generating keypair...")
-priv, pub = generate_keypair(512)
+priv, pub = generate_keypair(1024)
 
-x = 3
+x = 4
 print ("x =", x)
 print ("Encrypting x...")
 cx = encrypt(pub, x)
